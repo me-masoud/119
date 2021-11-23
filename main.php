@@ -1,10 +1,10 @@
 <?php
 
-require_once 'config.php';
+include '/config.php';
 
 class MyTmpTelegramBot
 {
-    const BOT_TOKEN = $Token;
+    const BOT_TOKEN = "";
     const TELEGRAM_API_URL = "https://api.telegram.org/bot";
 
     public $url;
