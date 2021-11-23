@@ -1,7 +1,10 @@
 <?php
+
+@require_once 'config.php';
+
 class MyTmpTelegramBot
 {
-    const BOT_TOKEN = "2127651559:AAF0AHzSStBMUiefsy54oQkR1GbGhAxGqwc";
+    const BOT_TOKEN = $Token;
     const TELEGRAM_API_URL = "https://api.telegram.org/bot";
 
     public $url;
