@@ -33,5 +33,5 @@ class MyTmpTelegramBot
 $obj = new MyTmpTelegramBot();
 $updatesJson = $obj->getUpdates();
 $updatesJson2Array = json_decode($updatesJson, true);
-$chatId = $updatesJson2Array['result'][0]['message']['chat']['id'];
+$chatId = $updatesJson2Array['result'][1]['message']['chat']['id'];
 $obj->sendMessage($chatId, 'Hi');
